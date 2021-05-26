@@ -1,0 +1,10 @@
+{
+    "/server": {
+      "target": "https://progsystems-project.herokuapp.com/",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/server": ""
+      }
+    }
+  }

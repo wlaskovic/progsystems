@@ -1,0 +1,29 @@
+<div class="content" role="main">
+  <table class="table table-striped table-responsive-md btn-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let product of products" class="product">
+        <th scope="row">{{ product.id }}</th>
+        <td>{{ product.title }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.amount }}</td>
+        <td>
+          <button type="button" class="m-0" (click)="decreaseAmount(product)">Add to cart</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>
+    {{ emptyStore }}
+  </p>
+  <a [routerLink]="['/login']">Logout</a>

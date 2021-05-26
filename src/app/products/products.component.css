@@ -1,0 +1,8 @@
+.products-container {
+    width: auto 0;
+}
+
+.product td {
+    align-items: center;
+    text-align: center;
+}
